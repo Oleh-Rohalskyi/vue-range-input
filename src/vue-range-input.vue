@@ -26,10 +26,10 @@ export default {
   mounted() {},
   computed: {
       compUpperStyle () {
-        return {...this.upperStyle, '--round': this.roundColor }
+        return Object.assign(this.upperStyle, {'--round': this.roundColor })
       },
       compLowerStyle () {
-        return {...this.lowerStyle, '--round': this.roundColor }
+        return Object.assign(this.lowerStyle, {'--round': this.roundColor })
       },
       lineStyleDual() {
           return {
